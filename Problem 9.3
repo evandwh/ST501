@@ -1,0 +1,5 @@
+x <- seq(0,1, by 0.001)
+curve(1 - (pnorm(60, mean=100*x, sd=sqrt(100*x*(1-x))) 
+	  - pnorm(40, mean=100*x, sd=sqrt(100*x*(1-x)))),
+      xlab = "p",
+      ylab = "Power")
